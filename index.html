@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programación III, Programación Web">
+    <meta name="keywords" content="Actividades, Senderismo, Fotografía, Lectura, Jardinería, Cocina creativa">
+    <meta name="author" content="Yostin Vargas">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="https://www.castrocarazo.ac.cr/web/sites/default/files/castro-carazo-favicon-11-11.png" type="image/png">
+    <title>Actividades</title>
+</head>
+
+<body>
+    <main>
+        <header id="dv-encabezado">
+            <img src="img/logo-universidad.png" alt="Logo Programación III">
+            <h1>Reproductor - Tarea Semana #5</h1>
+        </header>
+
+
+        <div class="contenedor">
+
+            <section id="contenedor-audios">
+                <audio id="audio"></audio>
+            </section>
+    
+            <section id="selector-audios">
+                <h2>Selecciona un audio</h2>
+
+                <ul style="cursor: pointer";  id="lista-audios">
+                </ul>
+                <!-- Content for audio selection can be added here -->
+            </section>
+    
+            <section id="reproductor" aria-label="Reproductor de música">
+
+                <div id="informacion-audio">
+                    
+                    <img style="border: 1px solid #ccc; border-radius: 8px"  src="img/icons8-nota-musical-96.png" alt="Portada del álbum">
+    
+                    <p style="width: 250px;"  id="nombre-audio"></p>
+                    
+                </div>
+
+                <div id="progreso-reproduccion">
+                    
+                    <progress id="barra-progreso" title="Progreso" value="0" max="100">45%</progress>
+                    <hr id="separador">
+                    <img id="icono-volumen" src="img\icons8-voice-16.png" alt="Volumen">
+                    <progress id="barra-volumen" value="100" max="100"></progress>
+                    <span id="tiempo-transcurrido" style="font-size: 0.8em;">00:00 / 00:00</span>
+                    
+                </div>
+            
+                <div id="controles-reproduccion">
+                    
+                    <button id="reproducir-pausar" onclick="alternarAudio()" aria-label="Reproducir">Reproducir</button>
+                    <button aria-label="Avanzar" onclick="siguienteAudio()">&gt;</button>
+                </div>
+            </section>
+
+        </div>
+     
+    </main>
+
+    <footer>
+        <p>Programación III - <span>&copy; 2025</span></p>
+    </footer>
+
+    <script src="js/contenido.js" defer></script>
+    <script src="js/interfaz.js" defer></script>
+    <script src="js/informacionPantalla.js" defer></script>
+</body>
+
+</html>
+
