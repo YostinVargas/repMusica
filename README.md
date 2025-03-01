@@ -1,0 +1,1 @@
+El objetivo de esta tarea es que los estudiantes diseñen y desarrollen un reproductor de música funcional utilizando HTML5, CSS3 y JavaScript. A lo largo de este proyecto, los estudiantes aplicarán sus conocimientos sobre la estructura de las páginas web, el diseño visual y la interacción dinámica utilizando tecnologías web modernas.
